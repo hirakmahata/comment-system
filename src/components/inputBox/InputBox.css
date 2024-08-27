@@ -1,0 +1,142 @@
+.input-box-container {
+  width: 100%;
+  border-radius: 1rem;
+  background: #ffffff;
+  border: 1px solid #0000003d;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.input-editor {
+  height: 5rem;
+  font-size: 1.4rem;
+  padding: 0.6rem;
+  padding-bottom: 0;
+  overflow: auto;
+}
+
+.input-editor:focus {
+  border: none;
+  outline: none;
+}
+
+.toolbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+}
+
+.toolbar {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.toolbar > button {
+  width: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  color: #7e7e7e;
+}
+
+.toolbar > button > svg {
+  margin-left: 1rem;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 0.4rem;
+}
+
+.toolbar button.active {
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.send-button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button {
+  background-color: #e5e5e5;
+  border: 1px solid #171818;
+  color: #000000;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #10020200;
+}
+
+@media screen and (max-width: 600px) {
+  .input-box-container {
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+  }
+
+  .input-editor {
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .toolbar-container {
+    padding: 0 0.2rem;
+    margin-top: 0.7rem;
+  }
+
+  .toolbar {
+    margin-top: 0.2rem;
+    gap: 0.3rem;
+  }
+
+  .toolbar > button {
+    width: 1.5rem;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .toolbar > button > svg {
+    margin-left: 0.2rem;
+    width: 1.1rem;
+  }
+
+  .button-container {
+    gap: 0.5rem;
+    margin-top: 0.2rem;
+  }
+
+  .cancel-button,
+  .send-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,88 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  background-color: white;
+  height: 5rem;
+}
+
+.signIn {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  gap: 0.2rem;
+  cursor: pointer;
+}
+
+.signIn > span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.user-profile > img {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.user-profile > p {
+  font-size: larger;
+  font-weight: 600;
+  color: #212121;
+}
+
+.LogOut {
+  border: none;
+  outline: none;
+  background: white;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  border-radius: 7px;
+  font-size: larger;
+  font-weight: 600;
+  color: #000000;
+}
+
+@media screen and (max-width: 426px) {
+  .header-container {
+    height: 3rem;
+  }
+
+  .signIn {
+    gap: 0.1rem;
+  }
+
+  .signIn > span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #000000;
+  }
+
+  .signIn > svg{
+    width: 1.5rem;
+  }
+
+  .user-profile > img {
+    width: 1.8rem;
+  }
+  .user-profile {
+    gap: 0.3rem;
+  }
+
+  .user-profile > p {
+    font-size: medium;
+  }
+}

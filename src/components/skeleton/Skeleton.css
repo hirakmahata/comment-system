@@ -1,0 +1,27 @@
+.skeleton-loader {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .skeleton-shape {
+    height: 2.5rem;
+    width: 100%;
+    background-color: #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    animation: skeleon-loading 1.5s infinite;
+  }
+  
+  @keyframes skeleon-loading {
+    0% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
