@@ -9,6 +9,10 @@
   padding: 1rem 0;
 }
 
+.comment-replyInput-container{
+  width: 100%;
+}
+
 .user-info {
   display: flex;
   align-items: center;
