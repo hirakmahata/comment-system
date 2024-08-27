@@ -3,9 +3,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 0.7rem;
-  margin-top: 1.2rem;
   width: 100%;
-  margin-bottom: 20px;
   padding: 1rem 0;
 }
 
@@ -96,7 +94,6 @@
 @media screen and (max-width: 600px) {
   .single-comment-container {
     gap: 0.7rem;
-    margin-top: 0;
     margin-bottom: 0;
     padding: 1rem 0;
   }
